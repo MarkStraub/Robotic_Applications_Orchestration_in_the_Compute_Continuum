@@ -4,7 +4,7 @@ from requests.auth import HTTPBasicAuth
 
 class MyOpenHorizonService:
     # https://stackoverflow.com/questions/26000336/execute-curl-command-within-a-python-script
-    def __init__(self, url, org, userName, password, headers, exchangeAPI):
+    def __init__(self, url, org, userName, password, headers):
         """
         Constructor
         https://open-horizon.github.io/docs/api/exchange_swagger/
@@ -14,7 +14,6 @@ class MyOpenHorizonService:
         self._userName = userName
         self._password = password
         self._headers = headers
-        self._exchangeAPI = exchangeAPI
 
 
 
